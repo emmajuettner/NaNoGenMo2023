@@ -22,3 +22,18 @@ whereDunnit = chooseRandom(places)
 newLine = "It was " + whoDunnit + " in the " + whereDunnit + " with the " + whatDunnit + "!"
 
 print(newLine)
+
+# Build an html file populated with the novel we've generated
+loader = FileSystemLoader(".")
+env = Environment(
+    loader=loader, extensions=["jinja2_humanize_extension.HumanizeExtension"]
+)
+template = env.get_template("index.jinja")
+Path("index.html").write_text(
+    template.render(
+        {
+            "novel" : novel
+        }
+    )
+)
+print("Generated index.html")
