@@ -19,9 +19,9 @@ whatDunnit = chooseRandom(weapons)
 whereDunnit = chooseRandom(places)
 
 # Generate novel text
-newLine = "It was " + whoDunnit + " in the " + whereDunnit + " with the " + whatDunnit + "!"
+novel = "It was " + whoDunnit + " in the " + whereDunnit + " with the " + whatDunnit + "!"
 
-print(newLine)
+print(novel)
 
 # Build an html file populated with the novel we've generated
 loader = FileSystemLoader(".")
