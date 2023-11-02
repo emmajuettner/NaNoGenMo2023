@@ -6,7 +6,7 @@ from pathlib import Path
 from jinja2 import FileSystemLoader, Environment
 
 def chooseRandom(arr) :
-	return arr[random.randint(0,len(arr)-1]
+	return arr[random.randint(0,len(arr)-1)]
 
 # Constants
 people = ["Miss Scarlett", "Professor Plum", "Colonel Mustard", "Mr Green", "Mrs Peacock", "Mrs White"]
