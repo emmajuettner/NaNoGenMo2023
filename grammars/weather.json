@@ -1,0 +1,7 @@
+{
+	"origin" : "It was a #lightCondition# and #weatherCondition# #time#. ",
+	"lightCondition" : ["dark","bright","gloomy","dreary","sunny","cloudy"],
+	"weatherCondition" : ["stormy","rainy","snowy","drizzly","clear","windy"],
+	"time" : ["night","evening","afternoon","morning","day","Monday","Tuesday",
+			"Wednesday","Thursday","Friday","Saturday","Sunday"]
+}
